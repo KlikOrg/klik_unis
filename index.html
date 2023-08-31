@@ -65,13 +65,13 @@
             <div class="mt-6 flow-root">
             <div class="-my-6 divide-y divide-gray-500/10">
                 <div class="space-y-2 py-6">
-                <a href="#whyklik" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Why Klik?</a>
-                <a href="#features" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
-                <a href="#howitworks" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">How It Works</a>
-                <a href="#whatpeople" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Klik Possibilities</a>
+                <a href="#whyklik" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" onclick="togMenu()">Why Klik?</a>
+                <a href="#features" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" onclick="togMenu()">Features</a>
+                <a href="#howitworks" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" onclick="togMenu()">How It Works</a>
+                <a href="#whatpeople" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" onclick="togMenu()">Klik Possibilities</a>
                 </div>
                 <div class="py-6">
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 CTA" onclick="popstart('popup')">Get Started</a>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 CTA" onclick="popstart('popup'); togMenu()">Get Started</a>
                 </div>
             </div>
             </div>
@@ -398,6 +398,7 @@
         </div>
       </div>
     <div class="popup rounded-3xl p-4 flex flex-wrap justify-center hidden sm:w-[80%] sm:h-7/12" id="popup">
+      <div class="blocker" onclick="popclose('popup')"></div>
       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ECF2FF" class="bi bi-x ml-30 cursor-pointer hover:scale-[110%] hover:rotate-90 active:scale-[90%] transition duration-300 justify-self-end" viewBox="0 0 16 16" onclick="popclose('popup')"> <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/> </svg>
       <h1 class="sm:text-2xl text-klikwhite font-bold text-center sm:mt-2 mt-0 text-lg">
             Make Your Community KLIK Today!
